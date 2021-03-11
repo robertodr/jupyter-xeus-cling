@@ -5,4 +5,4 @@ MAINTAINER Roberto Di Remigio <roberto.diremigio@hey.com>
 RUN conda install -y -c conda-forge xeus-cling jupyterlab
 RUN mkdir /notebooks
 
-#CMD ["jupyterlab", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
