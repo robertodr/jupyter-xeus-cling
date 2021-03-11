@@ -1,6 +1,4 @@
-FROM frolvlad/alpine-miniconda3
-
-MAINTAINER Roberto Di Remigio <roberto.diremigio@hey.com>
+FROM frolvlad/alpine-miniconda3:latest
 
 RUN conda install -y -c conda-forge xeus-cling jupyterlab
 RUN mkdir /notebooks
