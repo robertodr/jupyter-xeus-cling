@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v2.3.0
         with:
           push: true
-          tags: ${{ github.repository_owner }}/jupyter-xeus-cling
+          tags: ghcr.io/${{ github.repository_owner }}/jupyter-xeus-cling:latest
