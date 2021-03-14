@@ -1,7 +1,8 @@
-FROM frolvlad/alpine-miniconda3:latest
+FROM continuumio/miniconda3:4.9.2-alpine
 
 RUN conda install -y -c conda-forge \ 
     xeus-cling \
+    nodejs \
     jupyterlab \
     xtensor \
     xtensor-blas \
@@ -9,4 +10,4 @@ RUN conda install -y -c conda-forge \
     xsimd
 RUN mkdir /notebooks
 
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--no-browser", "--allow-root"]
