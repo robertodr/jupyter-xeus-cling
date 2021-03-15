@@ -4,7 +4,6 @@ RUN conda install -y -c conda-forge \
     xeus-cling=0.12.0 \
     xtensor=0.23.1 \
     xtensor-blas=0.19.0 \
-    blas=*=*openblas \
     jupyterlab \
     nodejs
 RUN mkdir /notebooks
