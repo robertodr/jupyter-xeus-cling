@@ -1,6 +1,7 @@
 FROM continuumio/miniconda3:4.10.3-alpine
 
 RUN conda install -y -c conda-forge \
+    cxx-compiler \
     eigen=3.4.0 \
     xeus-cling=0.13.0 \
     xtensor=0.23.10 \
